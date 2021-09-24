@@ -7,7 +7,7 @@ KLIB_LIB  := $(KLIB)
 LIBSOL    := libsolunar
 LIBSOL_INC := $(LIBSOL)/include
 LIBSOL_LIB := $(LIBSOL)
-TARGET	  := $(NAME)
+TARGET	  := $(NAME).html
 SOURCES   := $(shell find src/ -type f -name *.c)
 OBJECTS   := $(patsubst src/%,build/%,$(SOURCES:.c=.o))
 DEPS	  := $(OBJECTS:.o=.deps)
